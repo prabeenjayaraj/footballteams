@@ -1,0 +1,27 @@
+{
+  "configuration": {
+    "status": "default",
+    "name": "JSONLog",
+    "ThresholdFilter": {
+      "level": "debug"
+    },
+    "appenders": {
+      "Console": {
+        "name": "STDOUT",
+        "JSONLayout": {
+          "complete": true,
+          "compact": false,
+          "eventEol": false
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "debug",
+        "AppenderRef": {
+          "ref": "STDOUT"
+        }
+      }
+    }
+  }
+}
