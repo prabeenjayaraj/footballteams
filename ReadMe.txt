@@ -30,7 +30,7 @@ o Date of Creation
 
 
 Frameworks Used
-The API is created using Spring Data , JPA, REST , Hateos, JSON Logging, H2 database and also have added HAL browser support
+The API is created using Spring Boot, Data , JPA, REST , Hateos, JSON Logging, H2 database and also have added HAL browser support
 
 Below are the API features created for this service
 
@@ -54,3 +54,15 @@ Below are the API features created for this service
     in logstash to store this data in Elastic Search
 6. HAL browser support is added for easy navigation Help
 7. Unit Tests were run using code coverage
+8. Integration testing was done using POSTMAN
+
+
+Running the Application
+This is a Spring Boot application . The Main class is FootBallTeamsApplication. To manually start the application
+run this class . The default port for the application will be 8080.
+
+Once the application is started you can go to the url
+
+http://localhost:8080/
+
+The API uses Hateos so navigating to various links will be shown to the user
