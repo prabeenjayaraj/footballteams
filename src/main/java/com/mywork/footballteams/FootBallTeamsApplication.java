@@ -31,7 +31,7 @@ public class FootBallTeamsApplication {
 
 			logger.info("End of Data initialization ");
 
-			footBallTeamService.getFootBallTeamRepository().findAll()
+			footBallTeamService.findAll()
 					.forEach(  aa->logger.info(aa.toString()));
 		}
 
